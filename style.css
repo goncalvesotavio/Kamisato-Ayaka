@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('fonte/coolvetica\ rg.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'catalish_huntera';
+    src: url('fonte/catalish_huntera.otf') format('opentype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #0F2F33;
+    --cor-um: #1F3C40;
+    --cor-dois: #9AD2D9;
+    --cor-tres: #4F6F73;
+    --cor-quatro: #94A4A6;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-quatro);
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    color: var(--cor-dois);
+}
+
+ul {
+    font-size: 2.5rem;
+    list-style-type: none;
+    font-family: 'Coolvetica';
+    display: flex;
+    flex-direction: row;
+    gap: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_img {
+    max-width: 100%;
+}
+
+.h1_ayaka {
+    font-size: 5rem;
+    font-family: 'catalish_huntera';
+    color: var(--cor-dois);
+}
+
+.h2_ayaka {
+    font-size: 2.5rem;
+    font-family: 'Coolvetica';
+    color: var(--cor-tres);
+}
