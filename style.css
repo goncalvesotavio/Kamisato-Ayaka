@@ -23,18 +23,19 @@
     --cor-quatro: #94A4A6;
 }
 
-body {
+ body {
     background-color: var(--cor-fundo);
-}
+}  
 
 header {
     display: flex;
     align-items: center;
-}
+} 
 
 nav {
     display: flex;
-}
+    width: 100%;
+} 
 
 a {
     text-decoration: none;
@@ -52,7 +53,8 @@ ul {
     font-family: 'Coolvetica';
     display: flex;
     flex-direction: row;
-    gap: 50%;
+    width: 100%;
+    justify-content: space-around;
 }
 
 img {
